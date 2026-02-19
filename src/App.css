@@ -1,42 +1,121 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+   body {
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .pageHeader {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .pageHeader h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .bookList {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .bookBox {
+    background: white;
+    padding: 16px;
+    margin: 16px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    transition: 0.2s;
+  }
+  
+  .bookActive {
+    background: #e9d8f2;
+    padding: 16px;
+    margin: 16px auto;
+    border-radius: 8px;
+    border: 2px solid #b5838d;
+    max-width: 600px;
+    transition: 0.2s;
+  }
+  
+  .bookBox h3,
+  .bookActive h3 {
+    margin-bottom: 6px;
+  }
+  
+  .bookBox h4,
+  .bookActive h4 {
+    margin: 4px 0;
+  }
+  
+  /* ===========================
+     Add Book Form — Pretty Version
+     =========================== */
+  /* Add Book Form – Simple Version */
+.addBookForm {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.addBookForm h2 {
   text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form layout */
+.addBookForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Inputs */
+.addBookForm input,
+.addBookForm textarea {
+  padding: 8px;
+  border: 1px solid #bbb;
+  font-size: 0.95rem;
+  background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Button */
+.addBookForm button {
+  padding: 10px;
+  background: #4a4e69;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.addBookForm button:hover {
+  background: #3c3f55;
 }
 
-.read-the-docs {
-  color: #888;
+/* Make delete/edit links look like buttons */
+.bookBox a,
+.bookActive a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 5px;
+  border: 1px solid #b5838d;
+  background: #eee;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bookBox a:hover,
+.bookActive a:hover {
+  background:#ccc;
 }
