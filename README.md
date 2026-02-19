@@ -1,17 +1,15 @@
 Sofia Fedorova
 CS-234W
-02/11/2026
+02/18/2026
 
 # React
 This projects features:
-In this project I display a list of books by using functional components and JSX. The prupose of this assignment is to practise passing data through props, and rendering list using .map().
-Included:
-- List of books
-- Component-based structure
-- CSS styling
-- Add books
+- Using React state.
+- Event Handlers.
+- Controlled Components.
 
-## Testing
+## CRUD operations included in thw project:
 
-- npm run dev
-- test book tov erify that adding  new book is possible
+- addBook - creates new array containing previous books and the new book.
+- deleteBook - deletes book whose id matches thew one passed in.
+- updateBook - .map() to replace the book that was edited.
